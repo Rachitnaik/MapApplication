@@ -26,8 +26,8 @@ class Workout {
 
         const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-        this.description = `${this.type[0].toUpperCase()} ${this.type.slice(1)} on 
-         ${months[this.date.getMonth()]} ${this.date.getDate()}`;
+        this.description = `${this.type[0].toUpperCase()}${this.type.slice(1)} on 
+         ${months[this.date.getMonth()]} ${this.date.getDate()}`;  //edited here on 20jan
 
     }
 
@@ -286,7 +286,7 @@ class App {
             html += `
             <div class="workout__details">
             <span class="workout__icon">⚡️</span>
-            <span class="workout__value">${workout.speed}</span>
+            <span class="workout__value">${workout.speed.toFixed(1)}</span>
             <span class="workout__unit">km/h</span>
           </div>
           <div class="workout__details">
